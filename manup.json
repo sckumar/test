@@ -6,9 +6,9 @@
     "enabled": true
   },
   "android": {
-    "minimum": "1.0.0",
+    "minimum": "0.0.1",
     "latest": "1.0.0",
-    "url": "http://example.com",
+    "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=en_IN",
     "enabled": true
   }
 }
