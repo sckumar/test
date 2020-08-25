@@ -6,43 +6,55 @@
     "enabled": true,
     "alerts": {
       "maintenance": {
-        "en": {
+        "en-US": {
           "title": "Service down",
           "text": "We are performing some server updates and expect to be back in 2-3 hours"
         },
-        "ch": {
+        "ch-ZH": {
           "title": "Service down",
           "text": "We are performing some server updates and expect to be back in 2-3 hours"
         },
-        "th": {
+        "th-TH": {
+          "title": "Service down",
+          "text": "We are performing some server updates and expect to be back in 2-3 hours"
+        },
+        "ja-JP": {
           "title": "Service down",
           "text": "We are performing some server updates and expect to be back in 2-3 hours"
         }
       },
       "mandatory": {
-        "en": {
+        "en-US": {
           "title": "New update required",
           "text": "Our latest version fixes some critical bugs and is required to continue."
         },
-        "zh": {
+        "ch-ZH": {
           "title": "New update required",
           "text": "Our latest version fixes some critical bugs and is required to continue."
         },
-        "th": {
+        "th-TH": {
+          "title": "New update required",
+          "text": "Our latest version fixes some critical bugs and is required to continue."
+        },
+        "ja-JP": {
           "title": "New update required",
           "text": "Our latest version fixes some critical bugs and is required to continue."
         }
       },
       "optional": {
-        "en": {
+        "en-US": {
           "title": "New update available",
           "text": "A new update is available! It has some cool features."
         },
-        "zh": {
+        "ch-ZH": {
           "title": "New update available",
           "text": "A new update is available! It has some cool features."
         },
-        "th": {
+        "th-TH": {
+          "title": "New update available",
+          "text": "A new update is available! It has some cool features."
+        },
+        "ja-JP": {
           "title": "New update available",
           "text": "A new update is available! It has some cool features."
         }
