@@ -1,0 +1,14 @@
+{
+    "ios": {
+        "minimum": "0.0.1",
+        "latest": "1.0.0",
+        "url": "http://example.com",
+        "enabled": true
+    },
+    "android": {
+        "minimum": "1.0.0",
+        "latest": "1.0.0",
+        "url": "http://example.com",
+        "enabled": true
+    }
+}
