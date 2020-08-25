@@ -1,7 +1,7 @@
 {
   "ios": {
     "minimum": "1.0.0",
-    "latest": "1.0.1",
+    "latest": "1.0.0",
     "url": "https://apps.apple.com/in/app/whatsapp-messenger/id310633997",
     "enabled": true
   },
