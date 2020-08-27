@@ -1,4 +1,6 @@
 {
+  "config":
+{
   "ios": {
     "minimum": "1.0.0",
     "latest": "1.0.0",
@@ -67,4 +69,5 @@
     "url": "https://play.google.com/store/apps/details?id=com.whatsapp",
     "enabled": true
   }
+}
 }
