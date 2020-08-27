@@ -1,73 +1,72 @@
 {
-  "config":
-{
-  "ios": {
-    "minimum": "1.0.0",
-    "latest": "1.0.0",
-    "url": "https://apps.apple.com/in/app/whatsapp-messenger/id310633997",
-    "enabled": true,
-    "alerts": {
-      "maintenance": {
-        "en-US": {
-          "title": "Service down",
-          "text": "We are performing some server updates and expect to be back in 2-3 hours"
+  "config": {
+    "ios": {
+      "minimum": "1.0.0",
+      "latest": "1.0.0",
+      "url": "https://apps.apple.com/in/app/whatsapp-messenger/id310633997",
+      "enabled": true,
+      "alerts": {
+        "maintenance": {
+          "en-US": {
+            "title": "Service down",
+            "text": "We are performing some server updates and expect to be back in 2-3 hours"
+          },
+          "ch-ZH": {
+            "title": "Service down",
+            "text": "We are performing some server updates and expect to be back in 2-3 hours"
+          },
+          "th-TH": {
+            "title": "Service down",
+            "text": "We are performing some server updates and expect to be back in 2-3 hours"
+          },
+          "ja-JP": {
+            "title": "Service down",
+            "text": "We are performing some server updates and expect to be back in 2-3 hours"
+          }
         },
-        "ch-ZH": {
-          "title": "Service down",
-          "text": "We are performing some server updates and expect to be back in 2-3 hours"
+        "mandatory": {
+          "en-US": {
+            "title": "New update required",
+            "text": "Our latest version fixes some critical bugs and is required to continue."
+          },
+          "ch-ZH": {
+            "title": "New update required",
+            "text": "Our latest version fixes some critical bugs and is required to continue."
+          },
+          "th-TH": {
+            "title": "New update required",
+            "text": "Our latest version fixes some critical bugs and is required to continue."
+          },
+          "ja-JP": {
+            "title": "New update required",
+            "text": "Our latest version fixes some critical bugs and is required to continue."
+          }
         },
-        "th-TH": {
-          "title": "Service down",
-          "text": "We are performing some server updates and expect to be back in 2-3 hours"
-        },
-        "ja-JP": {
-          "title": "Service down",
-          "text": "We are performing some server updates and expect to be back in 2-3 hours"
-        }
-      },
-      "mandatory": {
-        "en-US": {
-          "title": "New update required",
-          "text": "Our latest version fixes some critical bugs and is required to continue."
-        },
-        "ch-ZH": {
-          "title": "New update required",
-          "text": "Our latest version fixes some critical bugs and is required to continue."
-        },
-        "th-TH": {
-          "title": "New update required",
-          "text": "Our latest version fixes some critical bugs and is required to continue."
-        },
-        "ja-JP": {
-          "title": "New update required",
-          "text": "Our latest version fixes some critical bugs and is required to continue."
-        }
-      },
-      "optional": {
-        "en-US": {
-          "title": "New update available",
-          "text": "A new update is available! It has some cool features."
-        },
-        "ch-ZH": {
-          "title": "New update available",
-          "text": "A new update is available! It has some cool features."
-        },
-        "th-TH": {
-          "title": "New update available",
-          "text": "A new update is available! It has some cool features."
-        },
-        "ja-JP": {
-          "title": "New update available",
-          "text": "A new update is available! It has some cool features."
+        "optional": {
+          "en-US": {
+            "title": "New update available",
+            "text": "A new update is available! It has some cool features."
+          },
+          "ch-ZH": {
+            "title": "New update available",
+            "text": "A new update is available! It has some cool features."
+          },
+          "th-TH": {
+            "title": "New update available",
+            "text": "A new update is available! It has some cool features."
+          },
+          "ja-JP": {
+            "title": "New update available",
+            "text": "A new update is available! It has some cool features."
+          }
         }
       }
+    },
+    "android": {
+      "minimum": "0.0.1",
+      "latest": "1.0.0",
+      "url": "https://play.google.com/store/apps/details?id=com.whatsapp",
+      "enabled": true
     }
-  },
-  "android": {
-    "minimum": "0.0.1",
-    "latest": "1.0.0",
-    "url": "https://play.google.com/store/apps/details?id=com.whatsapp",
-    "enabled": true
   }
-}
 }
