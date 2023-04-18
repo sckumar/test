@@ -1,0 +1,11 @@
+{
+    "login.login": "",
+    "login.loginCap": "",
+    "login.hint": "",
+    "login.proceed": "",
+    "login.email": "Correo electrónico",
+    "login.password": "Contraseña",
+    "login.rememberMe": "Recuérdame",
+    "login.emailReq": "El correo electrónico es obligatorio",
+    "login.passwordReq": "La contraseña es obligatoria"
+}
