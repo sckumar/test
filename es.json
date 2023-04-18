@@ -228,10 +228,5 @@
   "retailer.globalRetailers": "Retailers globales",
   "retailer.retailerName": "Nombre del retailer",
   "retailer.mrlLimit": "LMR Límite (%)",
-  "retailer.sumMrlLimit": "Límite suma LMR (%)",
-  "retailer.arfdLimit": "Límite ARfD (%)",
-  "retailer.sumArfdLimit": "Límite suma ARfD (%)",
-  "retailer.noOfActiveSubstances": "Número de sustancias activas",
-  "retailer.blackListSubstances": "Lista negra de sustancias activas",
-  "retailer.noRetailersToDisplay": "No hay retailers"
+  "retailer.sumMrlLimit": "Límite suma LMR (%)"
 }
