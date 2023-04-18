@@ -1,0 +1,11 @@
+{
+    "login.login": "Login",
+    "login.loginCap": "LOGIN",
+    "login.hint": "To get the best of predictions on residue levels for your crops",
+    "login.proceed": "Continue",
+    "login.email": "Email",
+    "login.password": "Password",
+    "login.rememberMe": "Remember me",
+    "login.emailReq": "Email is required",
+    "login.passwordReq": "Password is required"
+}
