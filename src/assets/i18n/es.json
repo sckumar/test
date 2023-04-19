@@ -2,7 +2,11 @@
     "HOME": {
         "title": "Hogar",
         "greeting": "¡Hola {{name}} ! ¡Bienvenido a la Academia Iónica!",
-        "withcode": "<br> <br> ¡Eres <b> épico <\/b> !"
+        "withcode": "<br> <br> ¡Eres <b> épico <\/b> !",
+        "login.login": "",
+        "login.loginCap": "",
+        "login.hint": "",
+        "login.proceed": ""
     },
     "ALERT": {
         "header": "Error",

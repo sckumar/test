@@ -2,7 +2,11 @@
     "HOME": {
         "title": "",
         "greeting": "",
-        "withcode": ""
+        "withcode": "",
+        "login.login": "",
+        "login.loginCap": "",
+        "login.hint": "",
+        "login.proceed": ""
     },
     "ALERT": {
         "header": "",
