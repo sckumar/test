@@ -1,11 +1,11 @@
 {
     "HOME": {
-        "title": "",
-        "greeting": "",
-        "withcode": ""
+        "title": "Maison",
+        "greeting": "Salut {{name}} ! Bienvenue à l'Académie ionique !",
+        "withcode": "<br> <br> Vous êtes <b> épique <\/b> !"
     },
     "ALERT": {
-        "header": "",
-        "msg": ""
+        "header": "Erreur",
+        "msg": "Il y a eu un problème avec votre opération"
     }
 }
