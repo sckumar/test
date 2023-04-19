@@ -3,10 +3,10 @@
         "title": "Maison",
         "greeting": "Salut {{name}} ! Bienvenue à l'Académie ionique !",
         "withcode": "<br> <br> Vous êtes <b> épique <\/b> !",
-        "login.login": "",
-        "login.loginCap": "",
-        "login.hint": "",
-        "login.proceed": ""
+        "login.login": "Connexion",
+        "login.loginCap": "CONNEXION",
+        "login.hint": "Pour obtenir le meilleur des prédictions sur les niveaux de résidus pour vos cultures",
+        "login.proceed": "Continuer"
     },
     "ALERT": {
         "header": "Erreur",
