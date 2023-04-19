@@ -6,7 +6,19 @@
         "login.login": "Login",
         "login.loginCap": "LOGIN",
         "login.hint": "To get the best of predictions on residue levels for your crops",
-        "login.proceed": "Continue"
+        "login.proceed": "Continue",
+        "months.jan": "Jan",
+        "months.feb": "Feb",
+        "months.mar": "Mar",
+        "months.apr": "Apr",
+        "months.may": "May",
+        "months.jun": "Jun",
+        "months.jul": "Jul",
+        "months.aug": "Aug",
+        "months.sep": "Sep",
+        "months.oct": "Oct",
+        "months.nov": "Nov",
+        "months.dec": "Dec"
     },
     "ALERT": {
         "header": "Error",

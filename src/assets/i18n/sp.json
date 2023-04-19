@@ -6,7 +6,19 @@
         "login.login": "",
         "login.loginCap": "",
         "login.hint": "",
-        "login.proceed": ""
+        "login.proceed": "",
+        "months.jan": "",
+        "months.feb": "",
+        "months.mar": "",
+        "months.apr": "",
+        "months.may": "",
+        "months.jun": "",
+        "months.jul": "",
+        "months.aug": "",
+        "months.sep": "",
+        "months.oct": "",
+        "months.nov": "",
+        "months.dec": ""
     },
     "ALERT": {
         "header": "",

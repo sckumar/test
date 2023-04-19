@@ -6,7 +6,19 @@
         "login.login": "Connexion",
         "login.loginCap": "CONNEXION",
         "login.hint": "Pour obtenir le meilleur des prédictions sur les niveaux de résidus pour vos cultures",
-        "login.proceed": "Continuer"
+        "login.proceed": "Continuer",
+        "months.jan": "",
+        "months.feb": "",
+        "months.mar": "",
+        "months.apr": "",
+        "months.may": "",
+        "months.jun": "",
+        "months.jul": "",
+        "months.aug": "",
+        "months.sep": "",
+        "months.oct": "",
+        "months.nov": "",
+        "months.dec": ""
     },
     "ALERT": {
         "header": "Erreur",
