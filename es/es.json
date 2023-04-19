@@ -1,0 +1,12 @@
+{
+    "HOME": {
+        "title": "Hogar",
+        "greeting": "¡Hola {{name}} ! ¡Bienvenido a la Academia Iónica!",
+        "withcode": "<br> <br> ¡Eres <b> épico <\/b> !",
+        "btn": "Mostrar alerta"
+    },
+    "ALERT": {
+        "header": "Error",
+        "msg": ""
+    }
+}
