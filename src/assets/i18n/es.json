@@ -3,10 +3,10 @@
         "title": "Hogar",
         "greeting": "¡Hola {{name}} ! ¡Bienvenido a la Academia Iónica!",
         "withcode": "<br> <br> ¡Eres <b> épico <\/b> !",
-        "login.login": "",
-        "login.loginCap": "",
-        "login.hint": "",
-        "login.proceed": ""
+        "login.login": "Acceso",
+        "login.loginCap": "ACCESO",
+        "login.hint": "Para obtener la mejor de las predicciones sobre los niveles de residuos para sus cultivos",
+        "login.proceed": "Continuar"
     },
     "ALERT": {
         "header": "Error",
