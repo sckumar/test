@@ -1,11 +1,11 @@
 {
     "HOME": {
-        "title": "Home",
-        "greeting": "Hey {{name}}! Welcome to the Ionic Academy!",
-        "withcode": "<br><br>You are <b>epic</b>!"
+        "title": "",
+        "greeting": "",
+        "withcode": ""
     },
     "ALERT": {
-        "header": "Error",
-        "msg": "There was a problem with your operation"
+        "header": "",
+        "msg": ""
     }
 }
