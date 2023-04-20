@@ -13,12 +13,12 @@
         "months.apr": "",
         "months.may": "",
         "months.jun": "",
-        "months.jul": "",
-        "months.aug": "",
-        "months.sep": "",
-        "months.oct": "",
-        "months.nov": "",
-        "months.dec": ""
+        "months.jul": "Jul",
+        "months.aug": "Août",
+        "months.sep": "Sep",
+        "months.oct": "Oct",
+        "months.nov": "Nov",
+        "months.dec": "Déc"
     },
     "ALERT": {
         "header": "Erreur",

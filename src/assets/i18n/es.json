@@ -15,10 +15,10 @@
         "months.jun": "",
         "months.jul": "",
         "months.aug": "",
-        "months.sep": "",
-        "months.oct": "",
-        "months.nov": "",
-        "months.dec": ""
+        "months.sep": "Sep",
+        "months.oct": "Octubre",
+        "months.nov": "Nov",
+        "months.dec": "Dic"
     },
     "ALERT": {
         "header": "Error",
