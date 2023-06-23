@@ -40,14 +40,14 @@ export class HomePage {
   runApp(): void {
     const idToken = liff.getIDToken();
     this.idToken = idToken;
-    console.log("Access token is ->", liff.getAccessToken());
+    alert("Access token is ->" + liff.getAccessToken());
     liff.getProfile().then(profile => {
       console.log(profile);
       this.displayName = profile.displayName;
       this.pictureUrl = profile.pictureUrl;
       this.statusMessage = profile.statusMessage;
       this.userId = profile.userId;
-    }).catch(err => console.error(err));
+    }).catch(err => alert("err " + err));
   }
 
   logout(): void {
@@ -65,7 +65,7 @@ export class HomePage {
         liff.login();
       }
     }, err => {
-      console.error(err);
+      alert("init err" + err);
     });
   }
 
