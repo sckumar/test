@@ -1,32 +1,19 @@
-<ion-header>
-	<ion-toolbar color="primary">
-		<ion-title>{{ 'HOME.title' | translate }}</ion-title>
-		<ion-buttons slot="end">
-			<ion-button (click)="openLanguagePopover($event)">
-				<ion-icon name="globe" slot="icon-only"></ion-icon>
-			</ion-button>
-		</ion-buttons>
-	</ion-toolbar>
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-	<!-- With pipe -->
-	{{ 'HOME.greeting' | translate: params }}
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-	<!-- With Translate directive -->
-	<ion-text
-		color="secondary"
-		[translate]="'HOME.greeting'"
-		[translateParams]="params"
-	></ion-text>
-
-	<!-- With directive and html -->
-	<ion-text
-		color="secondary"
-		[innerHTML]="'HOME.withcode' | translate"
-	></ion-text>
-
-	<ion-button expand="block" (click)="showAlert()">
-		{{ 'HOME.btn' | translate }}
-	</ion-button>
+  <div id="container">
+    <ion-button (click)="onLine()">Line Login</ion-button>
+  </div>
 </ion-content>

@@ -1,5 +1,7 @@
 {
-  "name": "ionic-angular-localiser",
-  "integrations": {},
+  "name": "LineInt",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

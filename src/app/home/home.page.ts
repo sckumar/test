@@ -1,38 +1,65 @@
-import { Component } from "@angular/core";
-import { LanguagePopoverPage } from "../pages/language-popover/language-popover.page";
-import { PopoverController, AlertController } from "@ionic/angular";
-import { TranslateService } from "@ngx-translate/core";
+import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import liff from '@line/liff';
+
 
 @Component({
-	selector: "app-home",
-	templateUrl: "home.page.html",
-	styleUrls: ["home.page.scss"],
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-	params = {
-		name: "Batman",
-	};
 
-	constructor(
-		private popoverCtrl: PopoverController,
-		private alertCtrl: AlertController,
-		private translate: TranslateService
-	) {}
+  title = 'angular-line-login';
+  idToken: any = '';
+  displayName = '';
+  pictureUrl:any = '';
+  statusMessage:any = '';
+  userId = '';
+  
+  constructor(public http: HttpClient) {
 
-	async showAlert() {
-		const alert = await this.alertCtrl.create({
-			header: this.translate.instant("ALERT.header"),
-			message: this.translate.instant("ALERT.msg"),
-			buttons: ["OK"],
-		});
-		alert.present();
-	}
+  }
 
-	async openLanguagePopover(ev) {
-		const popover = await this.popoverCtrl.create({
-			component: LanguagePopoverPage,
-			event: ev,
-		});
-		await popover.present();
-	}
+  ngOnInit(): void {
+    this.initLine();
+  }
+
+  initLine(): void {
+    liff.init({ liffId: '1661511591-nd6qWJxq' }, () => {
+      if (liff.isLoggedIn()) {
+        this.runApp();
+      } else {
+        liff.login();
+      }
+    }, err => {
+      console.error(err);
+    });
+  }
+
+  runApp(): void {
+    const idToken = liff.getIDToken();
+    this.idToken = idToken;
+    liff.getProfile().then(profile => {
+      console.log(profile);
+      this.displayName = profile.displayName;
+      this.pictureUrl = profile.pictureUrl;
+      this.statusMessage = profile.statusMessage;
+      this.userId = profile.userId;
+    }).catch(err => console.error(err));
+  }
+
+  logout(): void {
+    liff.logout();
+    window.location.reload();
+  }
+  
+  onLine() {
+    const url = encodeURI("https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=1661509225&redirect_uri=http://localhost:8100&state=12345abcde&scope=notify");
+    this.http.get(url).subscribe(res => {
+      console.log(res);
+    }, err=> {
+      console.log(err);
+    });
+  }
 }
