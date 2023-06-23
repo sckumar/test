@@ -16,7 +16,8 @@ export class HomePage {
   pictureUrl:any = '';
   statusMessage:any = '';
   userId = '';
-  
+  isLoggedin: boolean = false;
+
   constructor(public http: HttpClient) {
 
   }
@@ -28,9 +29,8 @@ export class HomePage {
   initLine(): void {
     liff.init({ liffId: '1661511591-nd6qWJxq' }, () => {
       if (liff.isLoggedIn()) {
+        this.isLoggedin = true;
         this.runApp();
-      } else {
-        liff.login();
       }
     }, err => {
       console.error(err);
@@ -54,6 +54,20 @@ export class HomePage {
     window.location.reload();
   }
   
+  login() {
+    liff.init({ liffId: '1661511591-nd6qWJxq' }, () => {
+      if (liff.isLoggedIn()) {
+        this.isLoggedin = true;
+        this.runApp();
+      } else {
+        this.isLoggedin = false;
+        liff.login();
+      }
+    }, err => {
+      console.error(err);
+    });
+  }
+
   onLine() {
     const url = encodeURI("https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=1661509225&redirect_uri=http://localhost:8100&state=12345abcde&scope=notify");
     this.http.get(url).subscribe(res => {
