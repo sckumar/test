@@ -40,6 +40,7 @@ export class HomePage {
   runApp(): void {
     const idToken = liff.getIDToken();
     this.idToken = idToken;
+    console.log("Access token is ->" + liff.getAccessToken());
     alert("Access token is ->" + liff.getAccessToken());
     liff.getProfile().then(profile => {
       console.log(profile);
@@ -47,7 +48,10 @@ export class HomePage {
       this.pictureUrl = profile.pictureUrl;
       this.statusMessage = profile.statusMessage;
       this.userId = profile.userId;
-    }).catch(err => alert("err " + err));
+    }).catch(err => {
+      console.log("err " + err);
+      alert("err " + err);
+    });
   }
 
   logout(): void {
@@ -65,16 +69,8 @@ export class HomePage {
         liff.login();
       }
     }, err => {
+      console.log("init err " + err);
       alert("init err" + err);
-    });
-  }
-
-  onLine() {
-    const url = encodeURI("https://access.line.me/oauth2/v2.1/authorize?response_type=code&client_id=1661509225&redirect_uri=http://localhost:8100&state=12345abcde&scope=notify");
-    this.http.get(url).subscribe(res => {
-      console.log(res);
-    }, err=> {
-      console.log(err);
     });
   }
 }
