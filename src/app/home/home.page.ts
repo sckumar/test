@@ -38,19 +38,21 @@ export class HomePage {
   }
 
   runApp(): void {
-    const idToken = liff.getIDToken();
-    this.idToken = idToken;
-    console.log("Access token is ->" + liff.getAccessToken());
-    alert("Access token is ->" + liff.getAccessToken());
-    liff.getProfile().then(profile => {
-      console.log(profile);
-      this.displayName = profile.displayName;
-      this.pictureUrl = profile.pictureUrl;
-      this.statusMessage = profile.statusMessage;
-      this.userId = profile.userId;
-    }).catch(err => {
-      console.log("err " + err);
-      alert("err " + err);
+    liff.init({ liffId: '1661511591-nd6qWJxq' }, () => {
+      const idToken = liff.getIDToken();
+      this.idToken = idToken;
+      console.log("Access token is ->" + liff.getAccessToken());
+      alert("Access token is ->" + liff.getAccessToken());
+      liff.getProfile().then(profile => {
+        console.log(profile);
+        this.displayName = profile.displayName;
+        this.pictureUrl = profile.pictureUrl;
+        this.statusMessage = profile.statusMessage;
+        this.userId = profile.userId;
+      }).catch(err => {
+        console.log("err " + err);
+        alert("err " + err);
+      });
     });
   }
 
