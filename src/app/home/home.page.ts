@@ -40,6 +40,7 @@ export class HomePage {
   runApp(): void {
     const idToken = liff.getIDToken();
     this.idToken = idToken;
+    console.log("Access token is ->", liff.getAccessToken());
     liff.getProfile().then(profile => {
       console.log(profile);
       this.displayName = profile.displayName;
