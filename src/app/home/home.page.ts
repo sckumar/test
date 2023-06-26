@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import liff from '@line/liff';
 
 
@@ -30,7 +30,27 @@ export class HomePage {
     liff.init({ liffId: '1661511591-nd6qWJxq' }, () => {
       if (liff.isLoggedIn()) {
         this.isLoggedin = true;
-        this.runApp();
+        // this.runApp();
+        let params = {
+          response_type: "code",
+          client_id: "1661511591",
+          redirect_uri: "https://life.line.me/1661511591-nd6qWJxq",
+          scope: "notify",
+          state: "xyz"
+        };
+        const url = "https://notify-bot.line.me/oauth/authorize";
+        let headerOption = {
+          headers: new HttpHeaders({
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          }),
+          params: params
+        };
+        this.http.get(url, headerOption).subscribe(res => {
+          console.log("authorisation success", res);
+        }, err => {
+          console.log("err in authorize->", err);
+        })
       }
     }, err => {
       console.error(err);
@@ -43,6 +63,7 @@ export class HomePage {
       this.idToken = idToken;
       console.log("Access token is ->" + liff.getAccessToken());
       alert("Access token is ->" + liff.getAccessToken());
+      
       liff.getProfile().then(profile => {
         console.log(profile);
         this.displayName = profile.displayName;
