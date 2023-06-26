@@ -30,27 +30,27 @@ export class HomePage {
     liff.init({ liffId: '1661511591-nd6qWJxq' }, () => {
       if (liff.isLoggedIn()) {
         this.isLoggedin = true;
-        // this.runApp();
-        let params = {
-          response_type: "code",
-          client_id: "1661511591",
-          redirect_uri: "https://life.line.me/1661511591-nd6qWJxq",
-          scope: "notify",
-          state: "xyz"
-        };
-        const url = "https://notify-bot.line.me/oauth/authorize";
-        let headerOption = {
-          headers: new HttpHeaders({
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          }),
-          params: params
-        };
-        this.http.get(url, headerOption).subscribe(res => {
-          console.log("authorisation success", res);
-        }, err => {
-          console.log("err in authorize->", err);
-        })
+        this.runApp();
+        // let params = {
+        //   response_type: "code",
+        //   client_id: "1661533554",
+        //   redirect_uri: "https://liff.line.me/1661511591-nd6qWJxq",
+        //   scope: "notify",
+        //   state: "xyz"
+        // };
+        // const url = "https://notify-bot.line.me/oauth/authorize";
+        // let headerOption = {
+        //   headers: new HttpHeaders({
+        //     "Content-Type": "application/json",
+        //     Accept: "application/json",
+        //   }),
+        //   params: params
+        // };
+        // this.http.get(url, headerOption).subscribe(res => {
+        //   console.log("authorisation success", res);
+        // }, err => {
+        //   console.log("err in authorize->", err);
+        // })
       }
     }, err => {
       console.error(err);
