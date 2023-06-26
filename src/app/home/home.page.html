@@ -17,6 +17,7 @@
     <ion-button (click)="login()" *ngIf="!isLoggedin">Line Login</ion-button>
     <div style="text-align: center;" *ngIf="isLoggedin">
       <h1>Angular with LINE Login</h1>
+      <ion-img [src]="pictureUrl"></ion-img>
       <hr>
       <p style="text-align: left; margin-left: 20%;"><b>id token: </b> {{ idToken }}</p>
       <p style="text-align: left; margin-left: 20%;"><b>display name: </b> {{ displayName }}</p>
